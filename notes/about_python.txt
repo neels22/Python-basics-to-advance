@@ -1,0 +1,24 @@
+python was created in 1990 by guido van rossum 
+
+python 3 released in 2008 
+
+designed as an easy to use language with high focus on readability
+
+python doesnt use braces and brackets instead it uses identation and white spaces 
+lots of libraries and frameworks are written in python 
+
+focuses on optimizing developer time rather than just computer processor time 
+
+documentation --- docs.python.org/3
+
+even base version of python comes with lots of built in modules like random module
+
+
+uses of python ----->
+1. automate tasks like search for files and edit them 
+2.scarping websites 
+3.read and edit excel
+4.perform machine learning tasks
+5.create and run predictive algorithm using tensorflow and scikit learn 
+6. website building using django and flask 
+7. create interactive dashboards using different libraries 

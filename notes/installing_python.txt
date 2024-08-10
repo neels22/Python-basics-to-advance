@@ -1,0 +1,10 @@
+
+you can run python on jupyter notebook through anaconda 
+
+
+options to run python code:
+1. text editors 
+2. full ides
+3. notebook environments 
+
+

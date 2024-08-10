@@ -1,0 +1,11 @@
+
+ls - list all files in directory 
+cd - change directory 
+cd.. - move one level up 
+
+python3 filename.py --- to execute the python file code 
+
+python3 ---- to open python shell in terminal 
+
+
+
