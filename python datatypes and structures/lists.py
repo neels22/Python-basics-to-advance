@@ -35,7 +35,7 @@ print(new_list)
 
 # sorting lists
 new_list = ['a','e','x','b','c']
-new_list.sort() # sorts the list in alphabetical order 
+print(new_list.sort()) # sorts the list in alphabetical order returns None
 print(new_list)
 # NoneType is return value of functions that doesnt return anything -- sort doesnt return anything 
 
@@ -46,6 +46,7 @@ print(new_list)
 # Nested lists
 nest = [1,2,['hello',33]]
 print(nest[2][1])
+
 
 
 
