@@ -47,6 +47,9 @@ print(new_list)
 nest = [1,2,['hello',33]]
 print(nest[2][1])
 
+# length of lists
+print(len(nest))
+
 
 
 
