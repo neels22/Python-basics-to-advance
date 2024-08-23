@@ -45,13 +45,13 @@ def printer(x):
     x= 200
     print(f'i just locally changed x to {x}')
 
-print(printer(x))
+printer(x)
 print(x)
 
 #############################
 
 # global keyword -- not to use at beginner level 
-# accidentally might overwrite this global assignment 
+# accidentally might overwrite this global assignment  
 
 x = 25
 
