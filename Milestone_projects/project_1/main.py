@@ -8,7 +8,6 @@
 # while loop running all these functions
 # 
 
-board = ['1','2','3','4','5','6','7','8','9']
 
 
 def display_board(board):
@@ -22,7 +21,7 @@ def display_board(board):
     print('- - -')
     print('\n')
 
-display_board(board)
+
 
 
 def player_choice():
@@ -48,31 +47,46 @@ def player_choice():
 
 
 
-player_1 ,player_2 =   player_choice()
 
 
 
-def play_your_move():
+
+def play_your_move(board,player):
 
     print('\n')
     print('current board state: ')
     display_board(board)
 
-    position = int(input('choose your position: '))
-    return position
+    # position = int(input(f'choose your position player {player} : '))
+
+    while True:
+
+        position = int(input(f'choose your position player {player} : '))
+        if position not in range(1,10):
+            print('Enter  1 to 9 ')
+            pass
+        else:
+            return position
 
 
-position = play_your_move()
-
-def place_the_marker(position,player):
-
-    board[position-1] = player
-    print('\n')
-    print('current board state: ')
-    display_board(board)
 
 
-place_the_marker(position,player_1)
+
+
+def place_the_marker(position,player,board):
+
+    if board[position-1] =='x' or board[position-1] =='o':
+        print('Cant place the marker at that position')
+    else:
+        board[position-1] = player
+    # print('\n')
+    # print('current board state: ')
+    # display_board(board)
+
+    return board
+
+
+
 
 
 
@@ -99,7 +113,54 @@ def win_check(board):
         return 'player o wins'
     
     
-res=win_check(board)
-print(res)
 
+def main():
+
+    board = ['1','2','3','4','5','6','7','8','9']
+    display_board(board)
+
+    player_1 ,player_2 =   player_choice()
+
+    
+    while True:
+
+        position = play_your_move(board,player_1)
+
+        # display_board(board)
+
+        board = place_the_marker(position,player_1,board)
+
+
+        res=win_check(board)
+        print('#'*10)
+        if res==None:
+            pass 
+        else:
+            display_board(board)
+            print(res)
+            print('\n')
+            break
+        print('#'*10)
+
+
+        position = play_your_move(board,player_2)
+        # display_board(board)
+
+        board = place_the_marker(position,player_2,board)
+
+
+        res=win_check(board)
+        print('#'*10)
+        if res==None:
+            pass 
+        else:
+            display_board(board)
+            print(res)
+            print('\n')
+            break
+        print('#'*10)
+
+
+
+main()
 
