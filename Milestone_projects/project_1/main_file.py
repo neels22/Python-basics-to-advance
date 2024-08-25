@@ -9,7 +9,6 @@
 # 
 
 
-
 def display_board(board):
     # print('\n')
     print('- - -')
