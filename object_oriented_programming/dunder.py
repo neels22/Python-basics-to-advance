@@ -38,7 +38,7 @@ class Book():
 
 mybook = Book('harry' ,'neel' , 200)
 
-print(mybook)
-res= len(mybook)
-print(res)
-del(mybook)
+print(mybook)                   # this will use overide str method
+res= len(mybook)                # this will use overidden len method
+print(res)                      
+del(mybook)                     # this will use overidden del method
