@@ -3,14 +3,12 @@
 # special methods allow to use built operations in python such as length function or print function with our own user created objects
 
 mylist= [1,2,3]
-
 len(mylist)
 
 # what if i want to check length of my own object??
 
 class sample():
     pass 
-
 mysample = sample()
 
 # len(mysample) ### gives error
