@@ -8,6 +8,8 @@
   
 # except -- in case error in try this will execute
 
+# else -- you can else when try doesnt give error
+
 # finally -- this code executes no matter what  -- not compulsory 
 
 # many types of errors are their typerros , os errors etc
