@@ -47,3 +47,5 @@ datetime2 = datetime(2023,11,3,12,0)
 
 res = datetime1 - datetime2
 print(res)
+print(res.seconds)
+print(res.total_seconds())
