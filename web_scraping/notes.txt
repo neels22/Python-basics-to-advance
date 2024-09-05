@@ -1,0 +1,34 @@
+
+
+well servers send you the code and the browsers show you the output of that code
+
+
+rules of web scraping 
+
+- always try to get permission before scraping any websites
+- if you make to many scraping attempts you ip address could get blocked 
+- some websites have automatic blockings
+
+
+limitations of web scraping 
+- in general every website is unique and scripts needs to be adjusted
+- a slight change in website may break your scraping script
+- scripts are quite static 
+
+
+
+
+basic html and css and js
+- python grabs raw documents so you may get html css and js in your script 
+- html is the stucture of the website 
+- css is designing obviously 
+- js is interactive elements of a webpage 
+
+- python can view html and css elements programatically and extract info from site
+
+################################################
+
+install requests
+install lxml
+install bs4 
+
