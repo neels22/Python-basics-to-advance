@@ -65,3 +65,4 @@ items = soup.select(".toctext")
 
 for item in items:
     print(item.text)
+
