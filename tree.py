@@ -118,6 +118,41 @@ def iterative_postorder_2stack(root):
 
 
 
+
+def all_traversals(root):
+    if root is None:
+        return [], [], []
+
+    stack = [(root, 1)]  # Stack stores a tuple of (node, state)
+    preorder = []
+    inorder = []
+    postorder = []
+
+    while stack:
+        node, state = stack.pop()
+
+        # State 1: Preorder position (before visiting the left subtree)
+        if state == 1:
+            preorder.append(node.val)
+            stack.append((node, 2))  # Push the node back with state 2
+            if node.left:
+                stack.append((node.left, 1))  # Push the left child with state 1
+
+        # State 2: Inorder position (after visiting the left, before right)
+        elif state == 2:
+            inorder.append(node.val)
+            stack.append((node, 3))  # Push the node back with state 3
+            if node.right:
+                stack.append((node.right, 1))  # Push the right child with state 1
+
+        # State 3: Postorder position (after visiting the right subtree)
+        else:
+            postorder.append(node.val)
+
+    return preorder, inorder, postorder
+
+
+
 def main():
     root = Node(10)
     values = [5, 15, 2, 7, 12, 20]
